@@ -1,0 +1,6 @@
+{
+	"slug": "wordpress-self-hosted-updating-plugin",
+	"version": "1.0.1",
+	"package": "https://github.com/deltafactory/wordpress-self-hosted-updating-plugin/archive/refs/heads/master.zip",
+	"autoupdate": false
+}

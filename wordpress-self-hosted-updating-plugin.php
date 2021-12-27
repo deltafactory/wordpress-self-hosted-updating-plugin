@@ -19,10 +19,10 @@ class Loader {
     static function update_plugin_data( $update, $plugin_data, $plugin_file, $locales ) {
         // Is this filter running for this plugin?
         if ( plugin_basename( __FILE__ ) === $plugin_file ) {
-            $update_url = $plugin_data['UpdateURI'];
+            $response = wp_remote_get( $plugin_data['UpdateURI'] );
 
             // This assumes that the data matches the format specified in https://developer.wordpress.org/reference/hooks/update_plugins_hostname/
-            $update = json_decode( file_get_contents( $update_url ) );
+            $update = json_decode( wp_remote_retrieve_body( $response ) );
         }
 
         return $update;

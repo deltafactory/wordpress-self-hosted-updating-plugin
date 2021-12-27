@@ -3,7 +3,7 @@
  * Plugin Name: Self-hosted Updating Plugin Demo
  * Plugin URI: https://github.com/deltafactory/wordpress-self-hosted-updating-plugin/
  * Description: Minimal example of a plugin with update support outside of the WordPress Repository. It does nothing else.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Jeff Brand, Delta Factory
  * Author URI: https://deltafactory.com/
  * Update URI: https://raw.githubusercontent.com/deltafactory/wordpress-self-hosted-updating-plugin/master/update.json
